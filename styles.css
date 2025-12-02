@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     background: linear-gradient(135deg, rgba(45, 139, 120, 0.2) 0%, rgba(28, 95, 93, 0.3) 100%),
                 linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-                url('/assets/hero-drought.jpg');
+                url('dry-corridor/assets/hero-drought.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
