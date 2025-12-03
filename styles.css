@@ -479,3 +479,41 @@ footer {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
+
+:root{
+  --link-light: #c7f9d4;   /* very light green */
+  --link-hover: #8fdc9a;   /* darker for hover/active/focus */
+  --link-visited: #b1eec0; /* slightly different visited color (optional) */
+}
+
+a {
+  color: var(--link-light);
+  text-decoration: underline; /* helps with contrast/readability */
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover,
+a:active {
+  color: var(--link-hover);
+  text-decoration-thickness: 2px;
+}
+
+a:focus {
+  outline: 3px solid color-mix(in srgb, var(--link-hover) 40%, white);
+  outline-offset: 2px;
+  color: var(--link-hover);
+}
+
+.button-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: var(--link-light);
+  text-decoration: underline;
+}
